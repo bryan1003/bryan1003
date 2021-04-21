@@ -2,6 +2,19 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+.text {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-decoration: none;
+}
+
 .overlay {
   height: 100%;
   width: 0;
@@ -25,9 +38,9 @@ body {
 
 .overlay a {
   padding: 8px;
-  text-decoration: none;
+  text-decoration: transparent;
   font-size: 36px;
-  color: #818181;
+  color: #0a6cbd;
   display: block;
   transition: 0.3s;
 }
@@ -53,7 +66,7 @@ body {
 }
 
 .meny{
-  background-color: #818181;
+  background-color: #0a6cbd;
 }
 
 .welcome{
@@ -61,17 +74,16 @@ body {
   width: 100%;
   display: flex;
   background-color: aqua;
-  background-image: url(../images/test.jpg);
+  background-image: linear-gradient(transparent, white 90%), url(../images/test.jpg);
   background-size: cover;
   align-items: center;
   justify-content: center;
 }
 
 #welcome-section{
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   text-align: center;
 }
-
 
 * {
   box-sizing: border-box;
@@ -94,6 +106,26 @@ body {
   padding: 10px;
 }
 
+.projects{
+  position: relative;
+}
+
+.textOverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+.projects:hover .textOverlay {
+  opacity: 1;
+}
+
 .column img {
   margin-top: 12px;
 }
@@ -103,4 +135,10 @@ body {
   content: "";
   display: table;
   clear: both;
+}
+
+#about-section{
+  color: rgb(0, 0, 0);
+  text-align: center;
+  left: 50%;
 }
