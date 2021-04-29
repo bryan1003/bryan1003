@@ -1,37 +1,43 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
   <link rel="stylesheet" href="style\style.css" type="text/css">
   <script src="script\javascript.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <script src="script\modal.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
+<!-- Nav bar -->
   <div id="myNav" class="overlay">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <div class="overlay-content">
-      <a href="#myProjects">Projects</a>
+      <a href="#projectHead">Projects</a>
       <a href="#about-section">About & contacts</a>
     </div>
   </div>
 
-  <div class="meny">
+
+<!-- Menu -->
+  <div class="menu">
     <span onclick="openNav()">&#9776; Menu</span>
   </div>
 
+
+<!-- Welcome section  -->
   <div class="welcome">
     <section id="welcome-section">
-      <h1 style="font-size: 30px;">My Portfolio</h1>
+      <img src="images/logo_transparent2.png" style="margin-bottom: 20%;">
     </section>
   </div>
 
+
 <!-- Header -->
-<div class="header">
-  <h1>Prosjekter</h1>
+<div id=projectHead class="header">
+  <h1>Projects </h1>
 </div>
+
 
 <!-- Photo Grid -->
 <div id=myProjects class="row"> 
@@ -44,31 +50,53 @@
         </div>
       </div>
     </div> 
-    <img src="images/test.jpg" style="width:100%">
-    <img src="images/test.jpg" style="width:100%">
-    <img src="images/test.jpg" style="width:100%">
+    <div class="projects">
+      <img src="images/servoInput.png" style="width:100%;"> </a>
+        <div class="textOverlay" style="margin-top: 10px; height: auto;">
+          <div>
+            <a class="text" href="project2.html">Project 3</a>
+          </div>
+        </div>
+    </div>
   </div>
 
 <!-- <div class="row">  -->
   <div class="column">
     <div class="projects">
-      <img src="images/DiodeBlink.png" style="width:100%; position: relative; margin-top: 200px; left: 0%;"> </a>
-      <div class="textOverlay" style="margin-top: 200px; height: auto;">
-        <div>
-          <a class="text" href="project2.html">Project 2</a>
+      <img src="images/DiodeBlink.png" style="width:100%; position: relative; margin-top: 170px; left: 0%;"> </a>
+        <div class="textOverlay" style="margin-top: 168px; height: auto;">
+          <div>
+            <a class="text" href="project2.html">Project 2</a>
+          </div>
         </div>
-      </div>
     </div>
-    <img src="images/test.jpg" style="width:100%">
-    <img src="images/test.jpg" style="width:100%">
-    <img src="images/test.jpg" style="width:100%">
+    <div class="projects">
+      <img src="images/read.png" style="width:100%;"> </a>
+        <div class="textOverlay" style="margin-top: 10px; height: auto;">
+          <div>
+            <a class="text" href="project2.html">Project 4</a>
+          </div>
+        </div>
+    </div>
   </div>
 </div>
 
+<!-- About section -->
   <div class="about">
-    <section id="about-section">
-      <h1 style="font-size: 30px;">About me </h1>
-    </section>
+    <button id="about-section" h1 style="font-size: 30px; background-color: #0a6cbd;">About me </button h1>
+    <p>Click above!</p>
   </div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div>
+
+</div>
+
 </body>
 </html>
