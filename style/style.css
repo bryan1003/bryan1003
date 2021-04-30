@@ -203,3 +203,8 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
+
+.footer{
+  text-align: center;
+  margin-top: 10px;
+}
